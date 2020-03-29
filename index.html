@@ -13,6 +13,14 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Bad+Script|Damion|Tangerine&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,12 +29,12 @@
   </head>
   <body>
     <nav
-      class="navbar navbar-expand-lg navbar-dark fixed-top"
+      class="navbar navbar-expand-lg navbar-dark sticky-top"
       id="nav-back"
-      style="background-color: #000000;"
+      style="background-color: #0a0a0a;"
     >
       <div class="container">
-        <a class="navbar-brand" href="#">Insignia</a>
+        <a class="navbar-brand" href="#" style="color: thistle; ">Insignia</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -47,68 +55,60 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
+              <a class="nav-link" href="events.html">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="team.html">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <div
-      id="carouselExampleIndicators"
-      class="carousel slide"
-      data-ride="carousel"
-    >
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
-        <li
-          data-target="#carouselExampleIndicators"
-          data-slide-to="0"
-          class="active"
-        ></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
       </ol>
-      <div class="carousel-inner" role="listbox">
-        <!-- Slide One - Set the background image for this slide in the line below -->
-        <div
-          class="carousel-item active"
-          style="background-image: url('./images/1c.jpeg')"
-        >
-          <div class="carousel-caption d-none d-md-block">
-            <h3 class="display-4">First Slide</h3>
-            <p class="lead">This is a description for the first slide.</p>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h1
+            style="text-align: center; margin-top: 100px; color: thistle; font-family: 'Damion', cursive; font-size: 100px;"
+          >
+            Insignia
+          </h1>
+          <div class="container">
+            <div class="carousel-caption text-center">
+              <h1 style="font-family: 'Roboto', sans-serif;">Learn Once</h1>
+            </div>
           </div>
         </div>
-        <!-- Slide Two - Set the background image for this slide in the line below -->
-        <div
-          class="carousel-item"
-          style="background-image: url('./images/1a.jpeg')"
-        >
-          <div class="carousel-caption d-none d-md-block">
-            <h3 class="display-4">Second Slide</h3>
-            <p class="lead">This is a description for the second slide.</p>
-          </div>
-        </div>
-        <!-- Slide Three - Set the background image for this slide in the line below -->
-        <div
-          class="carousel-item"
-          style="background-image: url('./images/2b.png')"
-        >
-          <div class="carousel-caption d-none d-md-block">
-            <h2 class="display-4">Third Slide</h2>
-            <p class="lead">This is a description for the third slide.</p>
+        <div class="carousel-item">
+          <h1
+            style="text-align: center; margin-top: 100px; color: thistle; font-family: 'Damion', cursive; font-size: 100px;"
+          >
+            Insignia
+          </h1>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1 style="font-family: 'Roboto', sans-serif;">Write Anywhere</h1>
+            </div>
           </div>
         </div>
       </div>
       <a
         class="carousel-control-prev"
-        href="#carouselExampleIndicators"
+        href="#myCarousel"
         role="button"
         data-slide="prev"
       >
@@ -117,7 +117,7 @@
       </a>
       <a
         class="carousel-control-next"
-        href="#carouselExampleIndicators"
+        href="#myCarousel"
         role="button"
         data-slide="next"
       >
@@ -127,39 +127,277 @@
     </div>
 
     <!-- Page Content -->
-    <section class="py-5">
-      <div class="container">
-        <h1 class="display-4">Full Page Image Slider</h1>
-        <p class="lead">
-          The background images for the slider are set directly in the HTML
-          using inline CSS. The images in this snippet are from
-          <a href="https://unsplash.com">Unsplash</a>, taken by
-          <a href="https://unsplash.com/@joannakosinska">Joanna Kosinska</a>!
-        </p>
-      </div>
-    </section>
+    <div class="container">
+      <!-- Header -->
+      <header class="text-center py-5 mb-4">
+        <div class="container">
+          <h1 class="font-weight-light text-black">
+            Design guidance and code
+          </h1>
+          <p
+            class="info"
+            style="color: rgb(0, 0, 0); padding-top: 40px; font-size: 20px;"
+          >
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus
+            modi, eveniet iure quo commodi, doloribus suscipit numquam facere
+            esse voluptatum dignissimos recusandae debitis et nulla quisquam
+            sapiente corrupti nostrum ipsam.
+          </p>
+        </div>
+      </header>
+      <div class="index-cards">
+        <div class="card-deck">
+          <div class="card">
+            <img src="/images/index1.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/index2.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This card has supporting text below as a natural lead-in to
+                additional content.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/index3.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This card has even longer content
+                than the first to show that equal height action.
+              </p>
+            </div>
+          </div>
+        </div>
 
-    <section class="py-5">
-      <div class="container">
-        <h1 class="display-4">Full Page Image Slider</h1>
-        <p class="lead">
-          The background images for the slider are set directly in the HTML
-          using inline CSS. The images in this snippet are from
-          <a href="https://unsplash.com">Unsplash</a>, taken by
-          <a href="https://unsplash.com/@joannakosinska">Joanna Kosinska</a>!
-        </p>
-      </div>
-    </section>
+        <!--DECK-2-->
 
-    <section class="py-5">
+        <div class="card-deck" id="deck2">
+          <div class="card">
+            <img src="/images/index4.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/index5.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This card has supporting text below as a natural lead-in to
+                additional content.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/index6.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This card has even longer content
+                than the first to show that equal height action.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Learn More content-->
+
+    <div class="back-color">
       <div class="container">
-        <h1 class="display-4">Full Page Image Slider</h1>
-        <p class="lead">
-          The background images for the slider are set directly in the HTML
-          using inline CSS. The images in this snippet are from
-          <a href="https://unsplash.com">Unsplash</a>, taken by
-          <a href="https://unsplash.com/@joannakosinska">Joanna Kosinska</a>!
-        </p>
+        <!-- Header -->
+        <header class="text-center py-5 mb-4">
+          <div class="container">
+            <h1 class="font-weight-light text-white">
+              Our Services
+            </h1>
+            <p
+              class="info"
+              style="color: whitesmoke; padding-top: 40px; font-size: 20px;"
+            >
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus
+              modi, eveniet iure quo commodi, doloribus suscipit numquam facere
+              esse voluptatum dignissimos recusandae debitis et nulla quisquam
+              sapiente corrupti nostrum ipsam.
+            </p>
+          </div>
+        </header>
+        <div class="card-deck" id="deck2">
+          <div class="card">
+            <img src="/images/learn1.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title" style="color: rgb(0, 0, 0);">
+                Card title
+              </h5>
+              <p class="card-text" style="color: rgb(0, 0, 0);">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/learn32.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title" style="color: rgb(0, 0, 0);">
+                Card title
+              </h5>
+              <p class="card-text" style="color: rgb(0, 0, 0);">
+                This card has supporting text below as a natural lead-in to
+                additional content.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/learn3.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title" style="color: rgb(0, 0, 0);">
+                Card title
+              </h5>
+              <p class="card-text" style="color: rgb(0, 0, 0);">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This card has even longer content
+                than the first to show that equal height action.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--ABOUT US-->
+
+    <div class="team1">
+      <div class="container">
+        <header class="text-center py-5 mb-4">
+          <div class="container">
+            <h1 class="font-weight-light text-black">Meet the Team</h1>
+            <p
+              class="info"
+              style="color: rgb(0, 0, 0); padding-top: 40px; font-size: 20px;"
+            >
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus
+              modi, eveniet iure quo commodi, doloribus suscipit numquam facere
+              esse voluptatum dignissimos recusandae debitis et nulla quisquam
+              sapiente corrupti nostrum ipsam.
+            </p>
+          </div>
+        </header>
+        <div class="row">
+          <!-- Team Member 1 -->
+          <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-0 shadow-lg">
+              <img
+                src="https://source.unsplash.com/TMgQMXoglsM/500x350"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title mb-0">Team Member</h5>
+                <div class="card-text text-black-50">Web Developer</div>
+              </div>
+            </div>
+          </div>
+          <!-- Team Member 2 -->
+          <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-0 shadow">
+              <img
+                src="https://source.unsplash.com/9UVmlIb0wJU/500x350"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title mb-0">Team Member</h5>
+                <div class="card-text text-black-50">Web Developer</div>
+              </div>
+            </div>
+          </div>
+          <!-- Team Member 3 -->
+          <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-0 shadow">
+              <img
+                src="https://source.unsplash.com/sNut2MqSmds/500x350"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title mb-0">Team Member</h5>
+                <div class="card-text text-black-50">Web Developer</div>
+              </div>
+            </div>
+          </div>
+          <!-- Team Member 4 -->
+          <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-0 shadow">
+              <img
+                src="https://source.unsplash.com/ZI6p3i9SbVU/500x350"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title mb-0">Team Member</h5>
+                <div class="card-text text-black-50">Web Developer</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="text-center"
+          style="padding-top: 20px; padding-bottom: 20px;"
+        >
+          <button
+            type="button"
+            class="btn btn-dark text-center"
+            data-toggle="button"
+            aria-pressed="false"
+          >
+            Know More
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <section id="lab_social_icon_footer">
+      <!-- Include Font Awesome Stylesheet in Header -->
+      <link
+        href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+        rel="stylesheet"
+      />
+      <div class="container">
+        <div class="text-center center-block">
+          <a href="https://www.facebook.com/bootsnipp"
+            ><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i
+          ></a>
+          <a href="https://twitter.com/bootsnipp"
+            ><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i
+          ></a>
+          <a href="https://plus.google.com/+Bootsnipp-page"
+            ><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i
+          ></a>
+          <a href="mailto:#"
+            ><i id="social-em" class="fa fa-envelope-square fa-3x social"></i
+          ></a>
+        </div>
       </div>
     </section>
 
